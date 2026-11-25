@@ -1,0 +1,26 @@
+<!-- BPMN step focus mark: three steps of a flow on a dimmed model, the middle one grown and lit,
+     as a focused step is. Source of truth for icons/*.png - re-render with `node make-icons.mjs`
+     after editing. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C333A"/>
+      <stop offset="1" stop-color="#1D2125"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="112" height="112" rx="27" fill="url(#bg)"/>
+
+  <!-- the dimmed steps either side and the flow between them -->
+  <g fill="#8C9BAB" opacity="0.6">
+    <rect x="14" y="55" width="20" height="18" rx="4"/>
+    <rect x="94" y="55" width="20" height="18" rx="4"/>
+    <rect x="34" y="62.5" width="6" height="3"/>
+    <rect x="88" y="62.5" width="6" height="3"/>
+  </g>
+
+  <!-- the focused step: grown, lit, with a glow -->
+  <rect x="36" y="40" width="56" height="48" rx="10" fill="none" stroke="#579DFF" stroke-width="8" opacity="0.35"/>
+  <rect x="40" y="44" width="48" height="40" rx="8" fill="#ffffff"/>
+  <rect x="40" y="44" width="48" height="40" rx="8" fill="none" stroke="#579DFF" stroke-width="3"/>
+</svg>
